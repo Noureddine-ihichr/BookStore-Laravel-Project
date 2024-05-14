@@ -1,0 +1,11 @@
+do 
+
+php artisan migrate
+
+then 
+
+php artisan db:seed
+
+admin email : admin@gmail.com
+admin password : admin@123
+
