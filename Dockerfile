@@ -1,10 +1,10 @@
-# Use the official PHP image as the base image
-FROM php:8.0-apache
+# Use PHP 8.1 Apache image as base
+FROM php:8.1-apache
 
 # Enable Apache mod_rewrite
 RUN a2enmod rewrite
 
-# Install necessary PHP extensions
+# Install necessary PHP extensions for Laravel
 RUN docker-php-ext-install pdo pdo_mysql
 
 # Set the working directory
